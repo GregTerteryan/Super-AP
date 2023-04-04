@@ -122,6 +122,6 @@ public class Enemy implements Serializable{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Enemy enemy = (Enemy) o;
-        return health == enemy.health && damage == enemy.damage && maxHealth == enemy.maxHealth && expAmount == enemy.expAmount && Objects.equals(name, enemy.name) && Objects.equals(weakness, enemy.weakness);
+        return damage == enemy.damage && maxHealth == enemy.maxHealth && expAmount == enemy.expAmount && Objects.equals(name, enemy.name) && Objects.equals(weakness, enemy.weakness);
     }
 }
