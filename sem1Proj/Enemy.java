@@ -94,7 +94,7 @@ public class Enemy implements Serializable{
             System.out.println("Yes! It missed!");
         }
         if (damage - player.getArmor().getDefense() >= 0)
-            player.setHealth(player.getHealth() - (damage) * multiplier);
+            player.setHealth(player.getHealth() - (damage- player.getArmor().getDefense()) * multiplier);
         else
             System.out.println("Your defense is so high, you took no damage!");
     }
